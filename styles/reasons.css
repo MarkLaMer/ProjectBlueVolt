@@ -1,0 +1,31 @@
+.reasons-modern {
+  background-color: #000214; /* Nearly black blue */
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.reasons-modern h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #88bbff;
+}
+
+.reasons-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  text-align: left;
+}
+
+.reasons-columns ul {
+  list-style: disc;
+  max-width: 400px;
+  padding-left: 20px;
+}
+
+.reasons-columns li {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
