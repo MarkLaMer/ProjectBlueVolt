@@ -4,45 +4,75 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Motorized Shades | Intellis Vision</title>
-  <link rel="stylesheet" href="styles/general.css" />
+  <link rel="stylesheet" href="styles/services.css" />
   <link rel="stylesheet" href="styles/navbar.css" />
-  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/gallery.css" />
+  <link rel="icon" type="image/png" href="images/iv-logo.png" />
 </head>
 <body>
+
+  <!-- Navbar -->
   <div class="navbar">
     <div class="logo">
-      <a href="index.html">Intellis Vision Inc.</a>
+      <a href="index.html">
+        <img src="images/iv-logo.png" alt="Intellis Vision Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;" />
+        Intellis Vision Inc.
+      </a>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html#home">Home</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="index.html#about">About Us</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
   </div>
 
-  <section style="padding-top:100px; text-align: center;">
+  <!-- Hero -->
+<section class="hero video-hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="videos/shades-hero.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-text">
     <h1>Motorized Shades</h1>
-    <p>Explore our expert motorized shades solutions — crafted with care and cutting-edge technology to fit your home perfectly.</p>
-    <div style="max-width: 800px; margin: 40px auto; font-size: 18px; line-height: 1.8;">
+    <p>Elegant, Efficient, and Expertly Installed</p>
+  </div>
+</section>
+
+  <!-- Section 1: Roller Shades -->
+  <section class="content-block left">
+    <div class="text">
+      <h2>Motorized Roller Shades</h2>
       <p>
-        At Intellis Vision, our motorized shades services are tailored for custom installations, clean aesthetics, and total system integration. We assess each project individually, ensuring seamless functionality with beautiful design.
+        Motorized roller shades offer a clean, modern aesthetic with the convenience of remote or app control. 
+        Easily adjust natural light levels throughout the day for energy savings, comfort, and privacy—all at the touch of a button.
       </p>
+    </div>
+    <div class="image" style="background-image: url('images/shades-roller.jpg');"></div>
+  </section>
+
+  <!-- Section 2: Blackout Shades -->
+  <section class="content-block right">
+    <div class="image" style="background-image: url('images/shades-blackout.jpg');"></div>
+    <div class="text">
+      <h2>Motorized Blackout Shades</h2>
       <p>
-        Reach out today for a free consultation and learn how our certified professionals can upgrade your home.
+        Ideal for bedrooms, home theaters, or offices, motorized blackout shades block out external light completely. 
+        With whisper-quiet motors and customizable fabric options, enjoy uninterrupted sleep or immersive viewing experiences.
       </p>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <h2>Contact Us</h2>
-      <p>Contact us today for your free estimation.</p>
-      <div class="contact-details">
-        <p><strong>Phone:</strong> 416-315-3934</p>
-        <p><strong>Email:</strong> <a href="mailto:support@intellisvision.ca">support@intellisvision.ca</a></p>
+  <!-- Gallery -->
+  <section class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery-wrapper">
+      <button class="nav prev">&#10094;</button>
+      <div class="gallery-slider">
+        <img src="images/shades-gallery-1.jpg" class="gallery-image" alt="Shades Project 1" />
+        <img src="images/shades-gallery-2.jpg" class="gallery-image" alt="Shades Project 2" />
+        <img src="images/shades-gallery-3.jpg" class="gallery-image" alt="Shades Project 3" />
+        <img src="images/shades-gallery-4.jpg" class="gallery-image" alt="Shades Project 4" />
       </div>
+      <button class="nav next">&#10095;</button>
     </div>
-  </footer>
+  </section>
+
+  <script src="scripts/gallery.js"></script>
+
 </body>
 </html>

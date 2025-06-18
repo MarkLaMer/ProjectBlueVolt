@@ -98,4 +98,8 @@
   .menu-toggle {
     display: flex;
   }
+
+  .logo {
+    font-size: 24px; /* Smaller font for mobile screens */
+  }
 }
