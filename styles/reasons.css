@@ -29,3 +29,26 @@
   font-size: 20px;
   margin-bottom: 15px;
 }
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.feature-box {
+  background-color: #001d3d;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.feature-box h3 {
+  color: #88bbff;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
