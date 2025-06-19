@@ -100,7 +100,7 @@
 </section>
 
 <section class="reasons-modern">
-  <h2>10.5 Reasons to Choose Intellis Vision</h2>
+  <h2>Why Intellis Vision?</h2>
   
     <div class="features-grid">
         <div class="feature-box">
@@ -113,7 +113,7 @@
     </div>
     <div class="feature-box">
       <h3>Future-Ready Design</h3>
-      <p>Whether pre-construction or retrofit, we wire your home for tomorrow.</p>
+      <p>Always ahead on tech & trends, we wire your home for tomorrow.</p>
     </div>
     <div class="feature-box">
       <h3>2-Year Labor Warranty</h3>
@@ -127,9 +127,6 @@
 
   <div class="reasons-columns">
     <ul>
-      <li>2-year labor warranty on all installations.</li>
-      <li>We support and manage manufacturer warranties.</li>
-      <li>Free estimates and consultations.</li>
       <li>Full-service solutions—no need to hire other trades.</li>
       <li>White glove service & respect for your home.</li>
     </ul>
@@ -219,6 +216,12 @@
 
     menuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
     });
   </script>
 

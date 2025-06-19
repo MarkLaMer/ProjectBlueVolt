@@ -4,45 +4,75 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Electrical Installation | Intellis Vision</title>
-  <link rel="stylesheet" href="styles/general.css" />
+  <link rel="stylesheet" href="styles/services.css" />
   <link rel="stylesheet" href="styles/navbar.css" />
-  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/gallery.css" />
+  <link rel="icon" type="image/png" href="images/iv-logo.png" />
 </head>
 <body>
+
+  <!-- Navbar -->
   <div class="navbar">
     <div class="logo">
-      <a href="index.html">Intellis Vision Inc.</a>
+      <a href="index.html">
+        <img src="images/iv-logo.png" alt="Intellis Vision Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;" />
+        Intellis Vision Inc.
+      </a>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html#home">Home</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="index.html#about">About Us</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
   </div>
 
-  <section style="padding-top:100px; text-align: center;">
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('images/placeholder-hero-electrical.jpg');"></section>
+  <div class="hero-text">
     <h1>Electrical Installation</h1>
-    <p>Explore our expert electrical installation solutions — crafted with care and cutting-edge technology to fit your home perfectly.</p>
-    <div style="max-width: 800px; margin: 40px auto; font-size: 18px; line-height: 1.8;">
+    <p>Safe, Certified, and Custom Tailored to Your Needs</p>
+  </div>
+
+  <section class="content-block left">
+    <div class="text">
+      <h2>Car Chargers</h2>
       <p>
-        At Intellis Vision, our electrical installation services are tailored for custom installations, clean aesthetics, and total system integration. We assess each project individually, ensuring seamless functionality with beautiful design.
+        Future-proof your home with EV car charger installations. Whether it’s Tesla, Level 2, or universal ports, we ensure efficient and code-compliant setups.
       </p>
+    </div>
+    <div class="image" style="background-image: url('images/placeholder-electric1.jpg');"></div>
+  </section>
+
+  <section class="content-block right">
+    <div class="image" style="background-image: url('images/placeholder-electric2.jpg');"></div>
+    <div class="text">
+      <h2>Home Wiring</h2>
       <p>
-        Reach out today for a free consultation and learn how our certified professionals can upgrade your home.
+        From new construction to remodels, we handle all your wiring needs. Our team provides structured cabling for data, power, and smart systems.
       </p>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <h2>Contact Us</h2>
-      <p>Contact us today for your free estimation.</p>
-      <div class="contact-details">
-        <p><strong>Phone:</strong> 416-315-3934</p>
-        <p><strong>Email:</strong> <a href="mailto:support@intellisvision.ca">support@intellisvision.ca</a></p>
-      </div>
+  <section class="content-block left">
+    <div class="text">
+      <h2>Fans & Automation</h2>
+      <p>
+        Enjoy year-round comfort with ceiling fan installation, and take control of your home with smart automation systems that integrate lights, climate, and security.
+      </p>
     </div>
-  </footer>
+    <div class="image" style="background-image: url('images/placeholder-electric3.jpg');"></div>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery-wrapper">
+      <button class="nav prev">&#10094;</button>
+      <div class="gallery-slider">
+        <img src="images/electric-installation-gallery-2.jpg" class="gallery-image" alt="Installation Project 2" />
+        <img src="images/electric-installation-gallery-3.jpg" class="gallery-image" alt="Installation Project 3" />
+        <img src="images/electric-installation-gallery-4.jpg" class="gallery-image" alt="Installation Project 4" />
+        <img src="images/electric-installation-gallery-5.jpg" class="gallery-image" alt="Installation Project 5" />
+      </div>
+      <button class="nav next">&#10095;</button>
+    </div>
+  </section>
+
+  <script src="scripts/gallery.js"></script>
+
 </body>
 </html>
