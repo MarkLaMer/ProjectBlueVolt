@@ -12,14 +12,27 @@
 </head>
 <body>
   <!-- Navbar -->
-        <div class="navbar">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/iv-logo.png" alt="Intellis Vision Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;" />
-          Intellis Vision Inc.
-        </a>
-      </div>
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html#home">
+        <img src="images/iv-logo.png" alt="Intellis Vision Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;" />
+        Intellis Vision Inc.
+      </a>
     </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
   
   
 
@@ -54,6 +67,17 @@
     </div>
   </section>
 
+    <section class="content-block left">
+    <div class="text">
+      <h2>Motorized Fans</h2>
+      <p>
+        Enjoy year-round comfort with ceiling fan installation, and take control of your home with smart automation systems that integrate lights, climate, and security.
+      </p>
+    </div>
+    <div class="image" style="background-image: url('images/placeholder-electric3.jpg');"></div>
+  </section>
+  
+
 
   <section class="gallery-section">
     <h2>Gallery</h2>
@@ -67,6 +91,7 @@
         <img src="images/lighting-gallery-3a.jpg" class="gallery-image" alt="Lighting Project 3" />
         <img src="images/lighting-gallery-10.jpg" class="gallery-image" alt="Lighting Project 10" />
         <img src="images/lighting-gallery-4.jpg" class="gallery-image" alt="Lighting Project 4" />
+        <img src="images/electric-installation-gallery-5.jpg" class="gallery-image" alt="Installation Project 5" />
         <img src="images/lighting-gallery-5.jpg" class="gallery-image" alt="Lighting Project 5" />
         <img src="images/lighting-gallery-12.jpg" class="gallery-image" alt="Lighting Project 12" />
         <img src="images/lighting-gallery-6.jpg" class="gallery-image" alt="Lighting Project 6" />
@@ -85,6 +110,21 @@
 
 
   <script src="scripts/gallery.js"></script>
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+  </script>
+
 
 </body>
 </html>
