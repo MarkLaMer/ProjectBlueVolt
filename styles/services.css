@@ -35,7 +35,7 @@ body {
   position: absolute;  /* make it float inside hero */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); background: rgba(0, 30, 100, 0.7);
+  transform: translate(-50%, -50%); background: rgba(0, 30, 100, 0.5);
   text-align: center;
   padding: 40px 40px;
   border-radius: 20px;
